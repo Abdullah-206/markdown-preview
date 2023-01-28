@@ -3,7 +3,7 @@ import { marked } from 'marked';
 
 
 
-class markdown extends React.Component {
+class Markdown extends React.Component {
 
   state = {
     text: ''
@@ -18,7 +18,7 @@ class markdown extends React.Component {
 
   render() {
       const { text } = this.state;
-      const markdown = marked(text);
+      const markdown1 = marked(text);
     return (
       
       <>
@@ -32,8 +32,8 @@ class markdown extends React.Component {
           </div>
           <div className="col-6" id="preview">
             <h5 className="text-center">Result </h5>
-            <div className="preview rounded p-2" dangerouslySetInnerHTML={{ __html: markdown}} />
-
+            <div className="preview rounded p-2" dangerouslySetInnerHTML={{__html:markdown1}} />
+             
 
           </div>
         </div>
@@ -44,4 +44,4 @@ class markdown extends React.Component {
   }
 }
 
-export default markdown;
+export default Markdown;
