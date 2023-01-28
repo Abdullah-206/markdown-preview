@@ -2,6 +2,7 @@ import React from 'react'
 import { marked } from 'marked';
 
 
+
 class markdown extends React.Component {
 
   state = {
@@ -16,10 +17,10 @@ class markdown extends React.Component {
   }
 
   render() {
-
-    const { text } = this.state;
-    const markdown = marked(text);
+      const { text } = this.state;
+      const markdown = marked(text);
     return (
+      
       <>
       <div>
         <h2 className="text-center mt-4 ">Convert your Markdown</h2>
